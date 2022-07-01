@@ -1,0 +1,82 @@
+LOGIN USERNAME PASSWORD MARKETING
+1. Username: Indotravelin
+2. Username: Lepaskuncilombok
+3. Username: Adventourid
+4. Username: Nonemtrans
+5. Username: Lokatrans
+6. Username: Baletrans
+PASSWORD ALL : 12345
+--------------------------------------------- 
+END POINT REST API
+#Transaksi
+1. Create transaksi >> http://localhost:8181/transaksi/create
+ Data Trabsfer Object:
+ Brand      string 
+ Mitra      string 
+ Unit       string 
+ Nopol      string 
+ User       string 
+ Checker    string 
+ Status     string 
+ Driver     string 
+ Out        string 
+ In         string 
+ Day        uint   
+ Perhari    uint   
+ Op         uint   
+ Total      uint   
+ TotalOp    uint   
+ SisaProfit uint
+2. Update transaksi >> http://localhost:8181/transaksi/update/:id
+3. Delete transaksi >> http://localhost:8181/transaksi/delete/:id
+4. Semua Transaksi >> http://localhost:8181/transaksi/all
+5. Get by ID >> http://localhost:8181/transaksi/id/:id
+
+#Marketing
+1. Create >> http://localhost:8181/brand/create
+ Data transfer Object:
+ Nama      string 
+ Password  string 
+ Website   string 
+ Marketing string 
+ Email     string 
+ Nohp      uint   
+ Gambar    string
+2. Update >> http://localhost:8181/brand/update/:id
+3. Semua >> http://localhost:8181/brand/all
+4. Delete >> http://localhost:8181/brand/delete/:id
+5. Get By Id >> http://localhost:8181/brand/id/:id
+6. Transaksi Markting >> http://localhost:8181/penjualan/:id 
+7. Login Marketing >> http://localhost:8181/brand/login
+ Data transfer Object:
+ Nama     string 
+ Password string 
+ 
+#Mitra
+1. Create >> http://localhost:8181/mitra/create
+ Data Transfer Object:
+ Nama string
+2. Update >> http://localhost:8181/mitra/update/:id
+3. Delete >> http://localhost:8181/mitra/delete/:id
+4. Semua >> http://localhost:8181/mitra/all
+5. Get By Id >> http://localhost:8181/mitra/id/:id
+6. Transaksi Mitra >> http://localhost:8181/mitra/penjualan/:id
+
+#Mobil
+1. Create >> http://localhost:8181/mobil/create
+ Data Transfer Object: 
+ Unit   string 
+ Nopol  string 
+ Gambar string 
+ Own    string
+2. Update >> http://localhost:8181/mobil/update/:id
+ Data Transfer Object:
+ Gambar  string 
+ Isready bool
+3. Semua >> http://localhost:8181/mobil/allmobil
+4. Delete >> http://localhost:8181/mobil/delete/:id
+
+
+
+
+
